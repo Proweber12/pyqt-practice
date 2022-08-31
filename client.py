@@ -2,7 +2,6 @@ import sys
 import json
 import socket
 import time
-import dis
 import argparse
 import logging
 import threading
@@ -82,7 +81,7 @@ class ClientSender(threading.Thread, metaclass=ClientMaker):
 
 
 # Класс-приёмник сообщений с сервера. Принимает сообщения, выводит в консоль.
-class ClientReader(threading.Thread , metaclass=ClientMaker):
+class ClientReader(threading.Thread, metaclass=ClientMaker):
     def __init__(self, account_name, sock):
         self.account_name = account_name
         self.sock = sock
@@ -193,12 +192,12 @@ def main():
         exit(1)
     else:
         # Если соединение с сервером установлено корректно, запускаем клиенский процесс приёма сообщний
-        module_reciver = ClientReader(client_name , transport)
-        module_reciver.daemon = True
-        module_reciver.start()
+        module_receiver = ClientReader(client_name, transport)
+        module_receiver.daemon = True
+        module_receiver.start()
 
         # затем запускаем отправку сообщений и взаимодействие с пользователем.
-        module_sender = ClientSender(client_name , transport)
+        module_sender = ClientSender(client_name, transport)
         module_sender.daemon = True
         module_sender.start()
         logger.debug('Запущены процессы')
@@ -207,7 +206,7 @@ def main():
         # ввёл exit. Поскольку все события обработываются в потоках, достаточно просто завершить цикл.
         while True:
             time.sleep(1)
-            if module_reciver.is_alive() and module_sender.is_alive():
+            if module_receiver.is_alive() and module_sender.is_alive():
                 continue
             break
 
