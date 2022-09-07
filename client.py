@@ -3,6 +3,10 @@ import logs.config_client_log
 import argparse
 import sys
 import os
+<<<<<<< Updated upstream
+=======
+from Cryptodome.PublicKey import RSA
+>>>>>>> Stashed changes
 from PyQt5.QtWidgets import QApplication, QMessageBox
 
 from common.variables import *
@@ -29,10 +33,18 @@ def arg_parser():
     parser.add_argument('addr', default=DEFAULT_IP_ADDRESS, nargs='?')
     parser.add_argument('port', default=DEFAULT_PORT, type=int, nargs='?')
     parser.add_argument('-n', '--name', default=None, nargs='?')
+<<<<<<< Updated upstream
+=======
+    parser.add_argument('-p', '--password', default='', nargs='?')
+>>>>>>> Stashed changes
     namespace = parser.parse_args(sys.argv[1:])
     server_address = namespace.addr
     server_port = namespace.port
     client_name = namespace.name
+<<<<<<< Updated upstream
+=======
+    client_passwd = namespace.password
+>>>>>>> Stashed changes
 
     # проверим подходящий номер порта
     if not 1023 < server_port < 65536:
@@ -69,6 +81,20 @@ if __name__ == '__main__':
     logger.info(
         f'Запущен клиент с парамертами: адрес сервера: {server_address} , порт: {server_port}, имя пользователя: {client_name}')
 
+<<<<<<< Updated upstream
+=======
+    # Загружаем ключи с файла, если же файла нет, то генерируем новую пару.
+    dir_path = os.path.dirname(os.path.realpath(__file__))
+    key_file = os.path.join(dir_path, f'{client_name}.key')
+    if not os.path.exists(key_file):
+        keys = RSA.generate(2048, os.urandom)
+        with open(key_file, 'wb') as key:
+            key.write(keys.export_key())
+    else:
+        with open(key_file, 'rb') as key:
+            keys = RSA.import_key(key.read())
+
+>>>>>>> Stashed changes
     #!!!keys.publickey().export_key()
     logger.debug("Keys sucsessfully loaded.")
     # Создаём объект базы данных
