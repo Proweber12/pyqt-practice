@@ -1,7 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e32b3571-a148-4ccf-888f-afceb3eea45f" name="Changes" comment="" />
+    <list default="true" id="e32b3571-a148-4ccf-888f-afceb3eea45f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/client/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/add_contact.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/client.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/client_test1.db3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/client_test2.db3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/database.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/del_contact.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/main_window.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/main_window_conv.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/start_dialog.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/transport.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/decos.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/descryptors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/errors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/metaclasses.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/build/doctrees/client.doctree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/build/doctrees/common.doctree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/build/doctrees/environment.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/build/doctrees/index.doctree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/build/doctrees/launcher.doctree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/build/doctrees/logs.doctree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/build/doctrees/server.doctree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/build/html/.buildinfo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/build/html/_sources/client.rst.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/build/html/_sources/common.rst.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/build/html/_sources/index.rst.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/build/html/_sources/launcher.rst.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/build/html/_sources/logs.rst.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/build/html/_sources/server.rst.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/build/html/_static/_stemmer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/build/html/_static/alabaster.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/build/html/_static/basic.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/build/html/_static/custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/build/html/_static/doctools.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/build/html/_static/documentation_options.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/build/html/_static/file.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/build/html/_static/jquery-3.2.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/build/html/_static/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/build/html/_static/language_data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/build/html/_static/minus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/build/html/_static/plus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/build/html/_static/pygments.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/build/html/_static/searchtools.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/build/html/_static/translations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/build/html/_static/underscore-1.3.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/build/html/_static/underscore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/build/html/client.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/build/html/common.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/build/html/genindex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/build/html/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/build/html/launcher.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/build/html/logs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/build/html/objects.inv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/build/html/py-modindex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/build/html/search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/build/html/searchindex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/build/html/server.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/make.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/source/client.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/source/common.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/source/conf.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/source/index.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/source/launcher.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/source/logs.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/source/server.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/add_user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/config_window.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/core.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/database.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/main_window.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/remove_user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/stat_window.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/variables.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/variables.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/launcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/launcher.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/client.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/client.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/config_client_log.py" beforeDir="false" afterPath="$PROJECT_DIR$/logs/config_client_log.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/server.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/server.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.ini" beforeDir="false" afterPath="$PROJECT_DIR$/server.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
